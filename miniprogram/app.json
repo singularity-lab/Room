@@ -4,10 +4,11 @@
     "pages/user_page/user_page",
     "pages/fill_info/fill_info",
     "pages/my_records/my_records",
-    "pages/booking_guide/booking_guide",
     "pages/administrator/administrator",
     "pages/appointment_page/appointment_page",
-    "pages/appointment_apply/appointment_apply"
+    "pages/appointment_page/appointment_guide",
+    "pages/appointment_apply/appointment_apply",
+    "pages/room_overview/room_overview"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
