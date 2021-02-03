@@ -1,4 +1,4 @@
-// miniprogram/pages/index/index.js
+// miniprogram/pages/room_overview/room_overview.js
 Page({
 
   /**

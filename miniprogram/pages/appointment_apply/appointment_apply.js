@@ -1,4 +1,4 @@
-// miniprogram/pages/index/index.js
+// miniprogram/pages/appointment_apply/appointment_apply.js
 Page({
 
   /**

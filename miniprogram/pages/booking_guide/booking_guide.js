@@ -1,4 +1,4 @@
-// miniprogram/pages/index/index.js
+// pages/booking_guide/booking_guide.js
 Page({
 
   /**
