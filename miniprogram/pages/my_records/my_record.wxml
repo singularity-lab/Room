@@ -1,0 +1,136 @@
+<!--miniprogram/pages/records/my_record.wxml-->
+<view class="content">
+  <view class="tab">
+    <image class="return-image" src="../../images/return.png"></image>
+    <text class="mytitle">我的记录</text>
+  </view>
+  <view class="line"></view>
+
+  <view class="order">
+
+
+    <view class="{{currentTab==0?'selected':'default'}}" data-current="0" bindtap='switchNav'>
+      预约记录
+
+    </view>
+    <view class="liner">
+      <view class="{{currentTab==1?'selected':'default'}}" data-current="1" bindtap='switchNav'>
+        历史记录
+      </view>
+    </view>
+  </view>
+  <view class="line"></view>
+
+  <swiper current='{{currentTab}}' style='height:{{winHeight}}px' bindchange='bindChange'>
+    <swiper-item>
+      <view class="person-list">
+        <view class="list-item">
+          <view class="text-item">
+            <view class="list-hint">
+              <text class="item-text">姓名</text>
+            </view>
+            <view class="list-text">
+              <text class="item-text">张三</text>
+            </view>
+          </view>
+          <view class="line"></view>
+        </view>
+        <view class="list-item">
+          <view class="text-item">
+            <view class="list-hint">
+              <text class="item-text">学号</text>
+            </view>
+            <view class="list-text">
+              <text class="item-text">41705042</text>
+            </view>
+          </view>
+          <view class="line"></view>
+        </view>
+        <view class="list-item">
+          <view class="text-item">
+            <view class="list-hint">
+              <text class="item-text">联系方式</text>
+            </view>
+            <view class="list-text">
+              <text class="item-text">13915975324</text>
+            </view>
+          </view>
+          <view class="line"></view>
+        </view>
+        <view class="list-item">
+          <view class="text-item">
+            <view class="list-hint">
+              <text class="item-text">会议室号</text>
+            </view>
+            <view class="list-text">
+              <text class="item-text">通博楼B420</text>
+            </view>
+          </view>
+          <view class="line"></view>
+        </view>
+        <view class="list-item">
+          <view class="text-item">
+            <view class="list-hint">
+              <text class="item-text">预约时段</text>
+            </view>
+            <view class="list-text">
+              <text class="item-text">2021-1-27 19:00-20:00</text>
+            </view>
+          </view>
+          <view class="line"></view>
+        </view>
+        <view class="list-item">
+          <view class="text-item">
+            <view class="list-hint">
+              <text class="item-text">申请事由</text>
+            </view>
+            <view class="list-text">
+              <text class="item-text">开会</text>
+            </view>
+          </view>
+          <view class="line"></view>
+        </view>
+        <view class="list-item">
+          <view class="text-item">
+            <view class="list-hint">
+              <text class="item-text">预约情况</text>
+            </view>
+            <view class="list-text">
+              <text class="item-pointtext">待审核</text>
+            </view>
+          </view>
+          <view class="line"></view>
+        </view>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view>
+        <block class="" wx:for="{{list}}" wx:key="id">
+          <navigator url='../list/item?id={{item.consumption_id}}'>
+          <view>
+            <view class="block-item">
+              <view class="block-hint">
+                <text class="item-text">通博楼B420</text>
+              </view>
+              <view class="block-text">
+                <text class="item-text">2021-1-27 19:00-20:00</text>
+              </view>
+            </view>
+            <view class="block-item">
+              <view class="block-hint">
+                <text class="item-text">申请事由：开会</text>
+              </view>
+              <view class="block-text">
+                <text class="item-text">已使用</text>
+              </view>
+            </view>
+          </view>
+          <view class="line"></view>
+          </navigator>
+        </block>
+
+      </view>
+    </swiper-item>
+  </swiper>
+
+</view>

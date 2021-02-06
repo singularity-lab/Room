@@ -1,0 +1,161 @@
+/* miniprogram/pages/records/my_record.wxss */
+.content
+{
+  position: absolute;
+  width: 100%;
+}
+
+.order {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.selected
+{
+  font-size: 13px;
+  color: #0c63aa;
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight:500;
+  padding-top: 15rpx;
+  padding-bottom: 15rpx;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.default
+{
+  font-size: 13px;
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight:500;
+  padding-top: 15rpx;
+  padding-bottom: 15rpx;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+.liner
+{
+  border-left: 1px solid gray;
+  width: 50%;
+  padding-right: 5%;
+  padding-left: 12%;
+
+}
+
+
+
+.tab{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 25rpx;
+}
+.return-image {
+  width: 35rpx;
+  height: 35rpx;
+  margin-left: 25rpx;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+.mytitle{
+  font-size: 15px;
+  color: black;
+  margin-top: 5rpx;
+  margin-bottom: 10rpx;
+  margin-left: 25rpx;
+  font-weight:600;
+}
+
+
+/* 列表 */
+.person-list {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 100%;
+}
+.list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  height: 80rpx;
+  width: 100%;
+}
+.text-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  height: 78rpx;
+  width: 100%;
+}
+.list-hint {
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  width: 30%;
+  height: 78rpx;
+  margin-left: 20rpx;
+}
+.list-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  width: 70%;
+  height: 78rpx;
+}
+.item-text {
+  display: flex;
+  align-items: left;
+  color: black;
+  font-size: 28rpx;
+  margin-left: 20rpx;
+
+}
+
+.item-pointtext {
+  display: flex;
+  align-items: left;
+  color: red;
+  font-size: 28rpx;
+  margin-left: 20rpx;
+
+}
+
+.line {
+  width: 96%;
+  height: 2rpx;
+  background: gray;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.block-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  height: 60rpx;
+  width: 100%;
+}
+.block-hint {
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  width: 40%;
+  height: 60rpx;
+  margin-left: 20rpx;
+}
+.block-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  width: 60%;
+  height: 60rpx;
+}
