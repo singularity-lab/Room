@@ -1,2 +1,63 @@
-<!--miniprogram/pages/room_overview/room_overview.wxml-->
-<text>miniprogram/pages/room_overview/room_overview.wxml</text>
+<view class="table">
+ <view class="tr bg-w">
+  <view class="th">时间段</view>
+  <view class="th-2">2.1(周一)</view>
+  <view class="th-2">2.2(周二)</view>
+  <view class="th-2">2.3(周三)</view>
+<view class="th-2">2.4(周四)</view>
+<view class="th-2">2.5(周五)</view>
+<view class="th-2">2.6(周六)</view>
+  <view class="th-3">2.7(周日)</view>
+ </view>
+ <block wx:for="{{listData}}" wx:key="{[code]}">
+  <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+   <view class="td-1" selectable="true">{{item.code}}</view>
+   <view class="td-2" selectable="true" scroll-y="true" >
+   <text class="th-text" style="overflow-y:auto;overflow-x:scroll" selectable="true">{{item.text}}</text>
+   </view>
+    <view class="td-2" selectable="true" scroll-y="true" >
+   <text class="th-text" style="overflow-y:auto;overflow-x:scroll" selectable="true">{{item.text}}</text>
+   </view>
+       <view class="td-2" selectable="true" scroll-y="true" >
+   <text class="th-text" style="overflow-y:auto;overflow-x:scroll" selectable="true">{{item.text}}</text>
+   </view>
+       <view class="td-2" selectable="true" scroll-y="true" >
+   <text class="th-text" style="overflow-y:auto;overflow-x:scroll" selectable="true">{{item.text}}</text>
+   </view>
+       <view class="td-2" selectable="true" scroll-y="true" >
+   <text class="th-text" style="overflow-y:auto;overflow-x:scroll" selectable="true">{{item.text}}</text>
+   </view>
+       <view class="td-2" selectable="true" scroll-y="true" >
+   <text class="th-text" style="overflow-y:auto;overflow-x:scroll" selectable="true">{{item.text}}</text>
+   </view>
+    <view class="td-3" selectable="true" scroll-y="true" >
+   <text class="th-text" style="overflow-y:auto;overflow-x:scroll" selectable="true">{{item.text}}</text>
+   </view>
+   <!--view class="td">{{item.type}}</view-->
+  </view>
+  <view class="tr bg-g2" wx:else>
+   <view class="td-1" selectable="true">{{item.code}}</view>
+   <view class="td-2" selectable="true" scroll-y="true" >
+   <text class="th-text" style="overflow-y:auto;overflow-x:scroll" selectable="true">{{item.text}}</text>
+   </view>
+    <view class="td-2" selectable="true" scroll-y="true" >
+   <text class="th-text" style="overflow-y:auto;overflow-x:scroll" selectable="true">{{item.text}}</text>
+   </view>
+       <view class="td-2" selectable="true" scroll-y="true" >
+   <text class="th-text" style="overflow-y:auto;overflow-x:scroll" selectable="true">{{item.text}}</text>
+   </view>
+       <view class="td-2" selectable="true" scroll-y="true" >
+   <text class="th-text" style="overflow-y:auto;overflow-x:scroll" selectable="true">{{item.text}}</text>
+   </view>
+       <view class="td-2" selectable="true" scroll-y="true" >
+   <text class="th-text" style="overflow-y:auto;overflow-x:scroll" selectable="true">{{item.text}}</text>
+   </view>
+       <view class="td-2" selectable="true" scroll-y="true" >
+   <text class="th-text" style="overflow-y:auto;overflow-x:scroll" selectable="true">{{item.text}}</text>
+   </view>
+    <view class="td-3" selectable="true" scroll-y="true" >
+   <text class="th-text" style="overflow-y:auto;overflow-x:scroll" selectable="true">{{item.text}}</text>
+   </view>
+  </view>
+ </block>
+</view>
