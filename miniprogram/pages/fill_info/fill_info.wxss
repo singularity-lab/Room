@@ -1,1 +1,70 @@
 /* miniprogram/pages/fill_info/fill_info.wxss */
+.content{text-align: center}
+.logo{margin-top: 60rpx;margin-bottom: 60rpx}
+.logo image{width:220rpx;height: 220rpx}
+.fill_text{
+font-size: 1.1rem;
+color: rgba(1,83,139, 1);
+}
+.line{
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 20rpx;
+    margin-bottom: 40rpx;
+    width:70%;
+    height:2rpx;
+    background:rgba(1,83,139, 1)
+    }
+.input-area input#IdNumber{
+background: url("../../images/IDNumber.svg") no-repeat ;
+}
+.input-area{
+    background-color: #fff;
+    text-align: left;
+    width: 100%;
+}
+.inputBox{
+    background-color: #fff;
+    text-align: left;
+    padding-left: 4%;
+    padding-right: 10%;
+    display: flex;
+    flex-direction: row;
+    border:1.2px solid rgba(1,83,139, 1);
+    border-radius: 20rpx;
+    margin-bottom: 40rpx;
+    margin-left:8%;
+    margin-right: 8%;
+}
+.input-area input{
+    height:80rpx;
+    line-height: 80rpx;
+    width: 60%;
+    padding-left:10rpx;
+}
+.btn-area{width: 100%;margin: 100rpx auto}
+.btn-area button{
+    /* background-color: rgba(1,83,139, 1); */
+    height: 3rem;
+    width: 580rpx!important;
+    margin-top: 40rpx;
+    color: #fff;
+}
+.txt-area{
+    margin-top: 30rpx;
+    display: flex;
+    justify-content:space-between;
+    font-size: 30rpx;
+    padding-left: 10rpx;
+}
+.radio-group{
+    margin-left: 10%;
+}
+.forgot-password{color: #888}
+.register{color:rgba(1,83,139, 1)}
+.forgot-password:active,.register:active{opacity: 0.7}
+.svgStyle{
+padding-top: 20rpx;
+width: 50rpx;
+height:50rpx;
+}

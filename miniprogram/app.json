@@ -8,13 +8,14 @@
     "pages/appointment_page/appointment_page",
     "pages/appointment_guide/appointment_guide",
     "pages/appointment_apply/appointment_apply",
-    "pages/room_overview/room_overview"
+    "pages/room_overview/room_overview",
+    "pages/log/log"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTitleText": "会议室预约",
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",
