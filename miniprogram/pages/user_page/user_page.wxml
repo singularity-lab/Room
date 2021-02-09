@@ -1,2 +1,21 @@
 <!--miniprogram/pages/user_page/user_page.wxml-->
-<text>miniprogram/pages/user_page/user_page.wxml</text>
+<view class="top">
+  <view>
+  <image class='background-image'  src='https://626f-book-room-8gzioc3h14919e78-1304849095.tcb.qcloud.la/yuyue_user/u53.png?sign=d3c7f54b3677e59d23be7b1c5e0630bd&t=1612673798'></image>
+  </view>
+<view class="name"> 
+  <text>张三</text>
+<text class="title">学院会议室预约</text>
+<text>41711043</text>
+</view>
+</view>
+<view class="center">
+  <image class='background-image1'  src='https://626f-book-room-8gzioc3h14919e78-1304849095.tcb.qcloud.la/yuyue_user/u60.png?sign=d3c7f54b3677e59d23be7b1c5e0630bd&t=1612673798'></image>
+  <image class='background-image1'  src='https://626f-book-room-8gzioc3h14919e78-1304849095.tcb.qcloud.la/yuyue_user/u61.png?sign=d3c7f54b3677e59d23be7b1c5e0630bd&t=1612673798'></image>
+  <image class='background-image1'  src='https://626f-book-room-8gzioc3h14919e78-1304849095.tcb.qcloud.la/yuyue_user/u59.png?sign=d3c7f54b3677e59d23be7b1c5e0630bd&t=1612673798'></image>
+</view>
+<view class="bottom">
+<text>预约指南</text>
+<text class="bottom2">会议室预约</text>
+<text class="bottom">我的记录</text>
+</view>

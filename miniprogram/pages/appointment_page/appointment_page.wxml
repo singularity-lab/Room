@@ -1,2 +1,64 @@
-<!--miniprogram/pages/appointment_page/appointment_page.wxml-->
-<text>miniprogram/pages/appointment_page/appointment_page.wxml</text>
+<view class='fenlei'>
+  <image class='select_img {{shows&&"select_img_rotate"}}' src='https://626f-book-room-8gzioc3h14919e78-1304849095.tcb.qcloud.la/yuyue_appoint/search.png?sign=6cd4274f0b2198a5beb241fdc2a2dfae&t=1612508410'></image>
+  <!-- 下拉框 -->
+    <view class='select_box'>
+      <view class='select' catchtap='selectTaps'>
+        <text class='select_text'>{{selectDatas[indexs]}}</text>
+        <!-- <image class='words_img' src='../../images/sanjiao.png'></image> -->
+        <image class='select_img {{shows&&"select_img_rotate"}}' src='https://626f-book-room-8gzioc3h14919e78-1304849095.tcb.qcloud.la/yuyue_appoint/tri.png?sign=0b981cb815e082024a6804b77e4ff87e&t=1612508316'></image>
+      </view>
+      <view class='option_box' style='height:{{shows?(selectDatas.length>5?300:selectDatas.length*60):0}}rpx;'>
+        <text class='option' style='{{indexs==selectDatas.length-1&&"border:0;"}}' wx:for='{{selectDatas}}' wx:key='this' data-index='{{index}}' catchtap='optionTaps'>{{item}}</text>
+      </view>
+    </view>
+</view>
+
+<view class="table">
+ <view class="tr bg-w">
+  <view class="th">时间段</view>
+  <view class="th-2">B420</view>
+  <view class="th-2">B421</view>
+  <view class="th-3">B423</view>
+ </view>
+ <block wx:for="{{listData}}" wx:key="{[code]}">
+  <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+   <view class="td-1" selectable="true">{{item.code}}</view>
+   <view class="td-2" selectable="true" scroll-y="true" >
+   <text class="th-text" style="overflow-y:auto;overflow-x:scroll" selectable="true">{{item.text}}</text>
+   </view>
+    <view class="td-2" selectable="true" scroll-y="true" >
+   <text class="th-text" style="overflow-y:auto;overflow-x:scroll" selectable="true">{{item.text}}</text>
+   </view>
+    <view class="td-3" selectable="true" scroll-y="true" >
+   <text class="th-text" style="overflow-y:auto;overflow-x:scroll" selectable="true">{{item.text}}</text>
+   </view>
+   <!--view class="td">{{item.type}}</view-->
+  </view>
+  <view class="tr bg-g2" wx:else>
+   <view class="td-1" selectable="true">{{item.code}}</view>
+   <view class="td-2" selectable="true" scroll-y="true" >
+   <text class="th-text" style="overflow-y:auto;overflow-x:scroll" selectable="true">{{item.text}}</text>
+   </view>
+    <view class="td-2" selectable="true" scroll-y="true" >
+   <text class="th-text" style="overflow-y:auto;overflow-x:scroll" selectable="true">{{item.text}}</text>
+   </view>
+    <view class="td-3" selectable="true" scroll-y="true" >
+   <text class="th-text" style="overflow-y:auto;overflow-x:scroll" selectable="true">{{item.text}}</text>
+   </view>
+  </view>
+ </block>
+</view>
+<view class='btns'>
+<view class='can'>
+<button style="font-size: 8pt !important;">可预约</button>
+</view>
+<view class='cant'>
+<button style="font-size: 8pt !important;">已预约</button>
+</view>
+<view class='wait'>
+<button style="font-size:8pt !important;">待审批</button>
+</view>
+</view>
+<view class='do' >
+<button style="font-size:10pt !important;">马上预约</button>
+</view>

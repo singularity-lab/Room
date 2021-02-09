@@ -1,1 +1,99 @@
 /* miniprogram/pages/room_overview/room_overview.wxss */
+.table {
+  border: 2px solid darkgray;
+  width: 96%;
+  margin-top: 1rem;
+  margin-left: 0.3rem;
+ }
+ .tr {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 1.5rem;
+  align-items: center;
+ }
+ .td {
+   width:32%;
+   justify-content: center;
+   display: flex;
+   text-align: center;
+   height: 100%;
+ }
+ .td-1 {
+   width:39%;
+   justify-content: center;
+   display: flex;
+   font-size: 7pt;
+   text-align: center;
+   border-right: 2px solid #ddd;
+   height: 100%;
+ }
+ .td-2 {
+   width:30%;
+   justify-content: center;
+   border-right: 2px solid #ddd;
+   text-align: center;
+   height: 100%;
+   max-width: 100%;
+   
+ }
+ .td-3{
+  width:30%;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  max-width: 100%;
+}
+ .bg-w{
+  background: #afb4db;
+  
+ }
+ .bg-g{
+  background: #E6F3F9;
+ }
+ .bg-g2{
+  background: #fff;
+ }
+ .th {
+  width: 39%;
+  justify-content: center;
+  color: #fff;
+  display: flex;
+  height: 1.5rem;
+  font-size: 8pt;
+  align-items: center;
+  border-right: 2px solid #ddd;
+ }
+ .th-2 {
+  width: 30%;
+  font-size: 7pt;
+  justify-content: center;
+  color: #fff;
+  display: flex;
+  height: 1.5rem;
+  align-items: center;
+  max-height: 3rem;
+  max-width: 80%;
+  border-right: 2px solid #ddd;
+ }
+ .th-3{
+  width: 30%;
+  justify-content: center;
+  color: #fff;
+  display: flex;
+  font-size: 7pt;
+  height: 1.5rem;
+  align-items: center;
+  max-height: 3rem;
+  max-width: 80%;
+ }
+ .th-text {
+  width: 80%;
+  justify-content: center;
+  color: #000;
+  display: block;
+  height: 1.5rem;
+  align-items: center;
+  max-height: 3rem;
+  max-width: 80%;
+ }

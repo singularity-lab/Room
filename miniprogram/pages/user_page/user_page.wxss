@@ -1,1 +1,48 @@
 /* miniprogram/pages/user_page/user_page.wxss */
+.top{
+  background-color: rgba(1, 83, 139, 1);
+  height: 9rem;
+  display: flex;
+}
+.background-image{
+  height: 3rem;
+  width: 3rem;  
+  margin-top:3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;                    
+}
+.name{
+  color: white;
+  margin-left: 1rem;
+ 
+  margin-top:3rem;
+}
+.title{
+  font-size: large;
+  margin-left:7rem;
+}
+.xuehao{
+  color: white;
+  margin-left: 7rem;
+  margin-top:1rem;
+}
+.background-image1{
+  background-color: rgba(1, 83, 139, 1);
+  padding:0.8rem;
+  height: 2.5rem;
+  width: 2.5rem;  
+  margin-top:3rem;
+  border-radius: 20%;
+  margin-left: 3rem;
+  margin-right: 1rem;                    
+}
+.bottom{
+  margin-top:1rem;
+  margin-left: 3rem;
+  margin-right: 1rem;  
+}
+.bottom2{
+  margin-top:1rem;
+  margin-left: 3.5rem;
+  margin-right: 1rem;  
+}
