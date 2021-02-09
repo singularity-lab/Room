@@ -72,6 +72,13 @@
           "id": -1,
           "name": "pages/fill_info/fill_info",
           "pathName": "pages/fill_info/fill_info",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
           "scene": null
         }
       ]

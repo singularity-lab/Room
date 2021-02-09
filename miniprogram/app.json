@@ -9,7 +9,7 @@
     "pages/appointment_guide/appointment_guide",
     "pages/appointment_apply/appointment_apply",
     "pages/room_overview/room_overview",
-    "log/log"
+    "pages/log/log"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

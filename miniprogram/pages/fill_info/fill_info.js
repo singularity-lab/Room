@@ -1,66 +1,121 @@
 // miniprogram/pages/fill_info/fill_info.js
+var util = require("../../utils/util.js");
+
 Page({
-
-  /**
-   * 页面的初始数据
-   */
-  data: {
-
+  data:{
+    loginBtnTxt:"确认修改",
+    loginBtnBgBgColor:"rgb(1,83,139,1)",
+    btnLoading:false,
+    disabled:false,
+    fillInfo:'请您完善或修改身份信息',
+    inputUserName: '',
+    inputPassword: '',
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  onLoad:function(options){
+    // 页面初始化 options为页面跳转所带来的参数
+    
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  onReady:function(){
+    // 页面渲染完成
+    
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  onShow:function(){
+    // 页面显示
+    
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
+  onHide:function(){
+    // 页面隐藏
+    
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
+  onUnload:function(){
+    // 页面关闭
+    
   },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
+  formSubmit:function(e){
+    var param = e.detail.value;
+    this.mysubmit(param);
   },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
+  mysubmit:function (param){
+    var flag = this.checkUserName(param)&&this.checkPassword(param)
+    if(flag){
+        this.setLoginData1();
+        this.checkUserInfo(param);
+    } 
   },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  setLoginData1:function(){
+    this.setData({
+      loginBtnTxt:"修改中",
+      disabled: !this.data.disabled,
+      loginBtnBgBgColor:"rgba(1,83,139,1)",
+      btnLoading:!this.data.btnLoading
+    });
+  },
+  setLoginData2:function(){
+    this.setData({
+      loginBtnTxt:"确认修改",
+      disabled: !this.data.disabled,
+      loginBtnBgBgColor:"rgba(1,83,139,1)",
+      btnLoading:!this.data.btnLoading
+    });
+  },
+  checkUserName:function(param){
+    var email = util.regexConfig().email; 
+    var phone = util.regexConfig().phone;
+    var inputUserName = param.username.trim();
+    if(email.test(inputUserName)||phone.test(inputUserName)){
+      return true;
+    }else{
+      wx.showModal({
+        title: '提示',
+        showCancel:false,
+        content: '请输入正确的学号/工号或者手机号码'
+      });
+      return false;
+    }
+  },
+  checkPassword:function(param){
+    var userName = param.username.trim();
+    var password = param.password.trim();
+    if(password.length<=0){
+      wx.showModal({
+        title: '提示',
+        showCancel:false,
+        content: '请输入手机号码'
+      });
+      return false;
+    }else{
+      return true;
+    }
+  },
+  checkUserInfo:function(param){
+    var username = param.username.trim();
+    var password = param.password.trim();
+    var that = this;
+    if((username=='admin@163.com'||username=='18500334462')&&password=='000000'){
+        setTimeout(function(){
+          wx.showToast({
+            title: '成功',
+            icon: 'success',
+            duration: 1500
+          });
+          that.setLoginData2();
+          that.redirectTo(param);
+        },2000);
+    }else{
+      wx.showModal({
+        title: '提示',
+        showCancel:false,
+        content: '用户名或密码有误，请重新输入'
+      });
+      this.setLoginData2();
+    }
+  },
+  redirectTo:function(param){
+    //需要将param转换为字符串
+    param = JSON.stringify(param);
+    wx.redirectTo({
+      url: '../main/index?param='+ param//参数只能是字符串形式，不能为json对象
+    })
   }
+
 })
