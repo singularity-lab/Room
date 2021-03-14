@@ -1,2 +1,29 @@
 <!--miniprogram/pages/booking_guide/booking_guide.wxml-->
-<text>miniprogram/pages/booking_guide/booking_guide.wxml</text>
+<view class="content">
+  <view class="tab">
+    <image class="return-image"
+      src="https://626f-book-room-8gzioc3h14919e78-1304849095.tcb.qcloud.la/images/return.png?sign=41cb8c1a218789069dc8180659382ddc&t=1615107565">
+    </image>
+    <text class="mytitle">预约指南</text>
+  </view>
+
+  <view>
+    <view class="title">学院会议室在线预约指南</view>
+    <view class="con">
+      <text class="tit-text">
+      1、可供预约的会议室列表
+        通博楼B420、421、423。
+        2、可申请人员
+        学院所有师生（用职工号或者学号登录、密码自定，注册时需要填报手机号）
+        3、申请规则
+        （1）学生使用提前一天（两天）申请，需要教师审批，需要写明申请时间和申请事由。申请时间超过半天的需要审批。
+        （2）教师使用提前一天（两天）申请，不需要申请，不需要审批，需要写明申请时间和事情事由。申请时间超过半天的需要审批。
+        （3）超级权限（暂时设置5名）不受提前申请限制，不需要审批，需要写明申请事由和事情事由。
+        （4）会议室申请时间为每天9:00-24:00，先申请先得，以及被占用的会议室不得重复申请。
+        （5）谁申请谁使用谁负责。
+      </text>
+    </view>
+  </view>
+
+
+</view>

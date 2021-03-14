@@ -1,8 +1,10 @@
 <!--miniprogram/pages/records/my_record.wxml-->
 <view class="content">
-  <view class="tab">
-    <image class="return-image" src="../../images/return.png"></image>
-    <text class="mytitle">我的记录</text>
+   <view class="tab">
+    <image class="return-image"
+    src="https://626f-book-room-8gzioc3h14919e78-1304849095.tcb.qcloud.la/images/return.png?sign=41cb8c1a218789069dc8180659382ddc&t=1615107565">
+  </image>
+  <text class="mytitle">我的记录</text>
   </view>
   <view class="line"></view>
 

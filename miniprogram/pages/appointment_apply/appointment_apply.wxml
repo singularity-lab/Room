@@ -1,2 +1,67 @@
-<!--miniprogram/pages/appointment_apply/appointment_apply.wxml-->
-<text>miniprogram/pages/appointment_apply/appointment_apply.wxml</text>
+<view class="tab">
+  <image class="return-image"
+    src="https://626f-book-room-8gzioc3h14919e78-1304849095.tcb.qcloud.la/images/return.png?sign=41cb8c1a218789069dc8180659382ddc&t=1615107565">
+  </image>
+  <text class="mytitle">预约指南</text>
+</view>
+
+<view class="s-title">申请时间</view>
+<view class="show">
+    <view class="text1">预定时长</view>
+    <input class="num" bindinput="timeInput" data-input="inputTime"
+      value="{{inputTime}}"></input>
+    <view class="text2">
+        小时
+    </view>
+  </view>
+
+<view class="show">
+  <view class="shijian">开始时间:{{yyTime}}
+  </view>
+  <view class="time2">
+    <image class="rili" bindtap='showTimeModel'
+      src=" https://626f-book-room-8gzioc3h14919e78-1304849095.tcb.qcloud.la/images/rili.png?sign=85dfe69e61bcd302687e8309901fe374&t=1615646790">
+    </image>
+  </view>
+</view>
+
+<view class="show">
+  <view class="shijian">结束时间:{{yyTime2}}
+  </view>
+</view>
+
+<view class="s-title">申请事由</view>
+<textarea type="text" bindinput="changeLimit" class="shuru"></textarea>
+<button bindtap='toSubmit' class="sub">提交</button>
+
+<!--日期弹出框-->
+<view class="modal {{timeShow?'modal_show':'modal_hide'}}">
+  <!-- 点击弹出框外部关闭弹出框 -->
+  <view class='modal_cancel' bindtap='modelCancel'></view>
+
+  <!-- 弹出框主体 -->
+  <view class='modal_container'>
+    <!-- 头部显示 -->
+    <view class='modal_header'>
+      <view>预定时间</view>
+      <view class='header_tip'>{{yyDay}}天内的预订</view>
+    </view>
+    <!-- 日期 -->
+    <view class="time">
+      <scroll-view class="time_scroll" scroll-x="true">
+        <view data-index="{{index}}" bindtap="timeClick" class="scroll_item {{currentTab==index?'time_active':''}}"
+          wx:for="{{timeList}}" wx:key="{{index}}">
+          <view>{{item.name}}</view>
+          <view>{{item.date}}</view>
+        </view>
+      </scroll-view>
+    </view>
+    <!-- 时间段 -->
+    <view class='hour'>
+      <view bindtap="hourClick"
+        class="hour_item {{item.isShow?'':'hour_unactive'}} {{hourIndex==index?'hour_active':''}} "
+        wx:for="{{hourList}}" wx:key="{{index}}" data-index="{{index}}" data-isshow="{{item.isShow}}">{{item.hour}}
+      </view>
+    </view>
+  </view>
+</view>
