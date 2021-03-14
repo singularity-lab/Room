@@ -1,0 +1,41 @@
+<view class="bg">
+	<view class="container">
+
+		<view class='padding'>
+
+<!-- 
+			<view class="cu-avatar xl round margin-left"><image class="cu-avatarimg" src="/style/Logo.png">
+      </image></view> -->
+			 <view class='header'>
+      <open-data class='userInfo' type="userAvatarUrl"  bindgetuserinfo="onGotUserInfo"></open-data>
+  </view>
+	
+	 
+   <open-data class='store_address' type="userNickName" lang="zh_CN"></open-data>
+		</view>
+	</view>
+	
+	<view class="padding flex solid-bottom padding justify-around lg-white">
+		<button class="cu-btn round bg-blue shadow cu-btn round lgg" bindtap="gotoLogin" >学生端登陆</button>
+		<button class="cu-btn round bg-blue shadow cu-btn round lgg" bindtap="check" >老师端登陆</button>
+	</view>
+<button open-type="getUserInfo" bindgetuserinfo='getUser'>点击授权</button>
+	<view class="bg-white">
+		<view class="line"></view>
+
+
+	</view>
+	<view class="bg-white">
+    <view class="flex p-xs margin-bottom-sm mb-sm">
+    <view class="line2"></view>
+
+    <view class="line3"></view>
+    </view>
+		<view class="flex padding justify-around ">
+	
+		</view>
+		<view class="text-center padding">
+			<text>登录即同意该程序的条款和隐私权</text>
+		</view>
+	</view>
+</view>

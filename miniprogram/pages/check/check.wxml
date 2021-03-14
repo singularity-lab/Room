@@ -1,0 +1,10 @@
+<view class="cu-form-group margin-top">
+			<view class="title">职工号:</view>
+			<input placeholder="请输入职工号以验证" bindinput="jobNumberInput"></input>
+		</view>
+
+
+<view class="padding flex flex-direction">
+			<button class="cu-btn bg-blue margin-tb-sm lg button-hover" role="button" aria-disabled="false" bindtap='check'>验证登陆</button>
+
+		</view>

@@ -1,0 +1,10 @@
+<view class="cu-form-group margin-top">
+			<view class="title">学号:</view>
+			<input placeholder="请输入学号以验证" bindinput="studentNumberInput"></input>
+		</view>
+
+
+<view class="padding flex flex-direction">
+			<button class="cu-btn bg-blue margin-tb-sm lg button-hover" role="button" aria-disabled="false" bindtap='check'>验证登陆</button>
+
+		</view>

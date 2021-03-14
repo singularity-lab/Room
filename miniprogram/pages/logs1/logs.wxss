@@ -1,0 +1,78 @@
+page{
+  background-color:#fff; 
+  }
+.bg{
+  background-color: rgb(254, 254, 254);
+  height: 100%;
+}
+.cu-avatar.xl{
+  width: 340rpx;
+height: 308rpx;
+
+}
+.cu-avatarimg{
+  border-radius: 87%;
+width: 197px;
+height: 180px;
+
+}
+.cuavatarimg{
+  border-radius: 87%;
+  width: 75rpx;
+height: 75rpx;
+}
+.container{
+  padding: 100rpx 0;
+}
+.cu-btn.lg{
+  width: 100px;
+}
+.cu-avatar{
+  width: 75rpx;
+height: 75rpx;
+}
+.cu-item{
+  height: 70px;
+}
+.line{
+  width:100%;
+  margin: auto;
+  height:2rpx;
+  background:rgb(235, 235, 235);
+}
+.line2{
+  margin-top: 25px;
+  width:100%;
+  height:2rpx;
+  background:rgb(235, 235, 235);
+}
+.line3{
+  margin-top: 25px;
+  width:100%;
+  height:2rpx;
+  background:rgb(235, 235, 235);
+}
+.header {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 220rpx;
+  height: 220rpx;
+  position: relative;
+  background: #1296db;
+  display: flex;
+  justify-content: center;
+  top:-60rpx;
+}
+.store_address{
+  display: flex;
+  justify-content: center;
+  font-size: medium;
+}
+ 
+.userInfo {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  width: 220rpx;
+  height: 220rpx;
+}
