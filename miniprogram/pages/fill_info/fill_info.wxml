@@ -1,2 +1,34 @@
 <!--miniprogram/pages/fill_info/fill_info.wxml-->
-<text>miniprogram/pages/fill_info/fill_info.wxml</text>
+<view class="content">
+    <view class = "logo">
+        <image mode="aspectFit" src="/images/swufe_logo.png"></image>
+    </view>
+    <text class="fill_text">{{fillInfo}}</text>
+    <view class="line"></view>
+    <form bindsubmit="formSubmit">
+        <view class="input-area">
+            <view class="inputBox">
+                <image class="svgStyle" mode="aspectFit" src="/images/name.svg"></image>
+                <input id="name" name="name" maxlength='20' type="text" placeholder="姓名" />  
+            </view> 
+            <view class="inputBox">
+                <image class="svgStyle" mode="aspectFit" src="/images/xuegonghao.svg"></image>
+                <input id="IdNumber" name="IdNumber" maxlength='40' type="text" placeholder="学号/工号" />
+            </view>
+            <view class="inputBox">
+                <image class="svgStyle" mode="aspectFit" src="/images/Phone.svg"></image>
+                <input id="phoneNumber" name="phoneNumber" maxlength='20' type="number" placeholder="手机号码" />  
+            </view> 
+            <view class="radio-group" >
+                <radio-group id="type" name="type" bindchange="radioChange">
+                <label><radio value="教师"/>教师</label>
+                <label><radio value="学生"/>学生</label>
+                </radio-group>
+            </view>        
+        </view>
+        <view class="btn-area">
+            
+            <button  disabled="{{disabled}}" style="background-color:{{loginBtnBgBgColor}}"   formType="submit"  loading="{{btnLoading}} " > {{loginBtnTxt}} </button>
+        </view>
+    </form> 
+</view>

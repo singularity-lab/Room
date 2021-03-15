@@ -32,14 +32,14 @@ Page({
         }else if(res.data.length==0){
           console.log(1)
           wx.showModal({
-          content:"不存在该用户，请重新输入！",
-          cancelText:"返回",
+          content:"不存在该用户",
+          cancelText:"完善信息",
           confirmText:"重写输入",
           success (res) {
             if (res.confirm) {
             } else if (res.cancel) {
-              wx.navigateBack({
-                delta: 0,
+              wx.redirectTo({
+                url: '../fill_info/fill_info',            
               })
             }
           }        
