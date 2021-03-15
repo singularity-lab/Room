@@ -152,6 +152,9 @@ Page({
   
  
   }
+  wx.navigateTo({
+    url: '../logs1/logs',
+  })
     
   },
   checkUserInfo:function(param){
