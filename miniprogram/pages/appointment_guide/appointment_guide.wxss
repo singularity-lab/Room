@@ -1,1 +1,47 @@
 /* miniprogram/pages/booking_guide/booking_guide.wxss */
+.content
+{
+  position: absolute;
+  width: 100%;
+}
+.tab{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 25rpx;
+}
+.return-image {
+  width: 35rpx;
+  height: 35rpx;
+  margin-left: 25rpx;
+  margin-top: 5rpx;
+  margin-bottom: 10rpx;
+}
+.mytitle{
+  font-size: 35rpx;
+  color: black;
+  margin-bottom: 10rpx;
+  margin-left: 25rpx;
+  font-weight:600;
+}
+
+.title{
+  font-size: 32rpx;
+  color: black;
+  margin-top: 35rpx;
+  margin-bottom: 10rpx;
+  margin-left: 25rpx;
+  text-align: center;
+}
+
+.con{
+  margin-right: 40rpx;
+  margin-left: 40rpx;
+}
+
+.tit-text{
+  font-size: 30rpx;
+  color: black;
+  margin-left: 25rpx;
+ 
+}
